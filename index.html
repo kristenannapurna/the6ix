@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The 6ix</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<img src="images/hy6ix.png" alt="the 6ix">
+		<h2>Drag this to your bookmarks bar to see Cohort 6 take over any webpage. (Try the <a href="http://hackeryou.com/student-directory/" target="_blank">Student Directory</a>)</h2>
+			<a id="bookmarklet" href="javascript:(function(){(function(){var v=&quot;1.10.2&quot;;if(typeof window.jQuery!=='undefined'||window.jQuery.fn.jquery<v){var done=false;var script=document.createElement(&quot;script&quot;);script.src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/&quot;+v+&quot;/jquery.min.js&quot;;script.onload=script.onreadystatechange=function(){if(!done&&(!this.readyState||this.readyState==&quot;loaded&quot;||this.readyState==&quot;complete&quot;)){done=true;init();}};document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);}else{init();}function imageSwap(){var $images=$('img');var logo=&quot;http://kristenspencer.ca/wp-content/uploads/2015/04/hy6ix.png&quot;;$images.attr(&quot;src&quot;,logo);}function getDrake(){var $drakeDiv=$(&quot;<div/>&quot;).html('<iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197861717&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&quot;></iframe>');$drakeDiv.css('display','none');$('body').append($drakeDiv);}function makeItBounce(){$(&quot;head&quot;).append($('<link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />').attr('href','https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css'));setTimeout(function(){$('body').addClass('animated infinite bounce');},7500);}function init(){if(typeof window.hy__the6ix!=='undefined'){return;}window.hy__the6ix=true;makeItBounce();imageSwap();getDrake();}})();})();">the6ix!</a>	
+			
+			<footer>
+				<p>Inspired by <a href="http://nthitz.github.io/turndownforwhatjs/">turndownforwhat.js</a></p>
+				<p>Fork me on github and add something ridiculous!</p>	
+			</footer>
+
+	</div>
+		
+	
+</body>
+</html>
